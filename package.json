@@ -1,0 +1,23 @@
+{
+  "name": "chirpstack-codecs",
+  "version": "1.0.0",
+  "description": "Codecs for chirpstack",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhwz/chirpstack-codecs.git"
+  },
+  "author": "Joel Howse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jhwz/chirpstack-codecs/issues"
+  },
+  "homepage": "https://github.com/jhwz/chirpstack-codecs#readme",
+  "dependencies": {
+    "esbuild": "^0.15.10",
+    "typescript": "^4.9.0-dev.20221004"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "lib": ["es2020"],
+    "module": "ES2020",
+    "importsNotUsedAsValues": "error",
+    "strict": true,
+    "paths": {
+      "$utils": ["./src/utils/index.js"],
+      "$utils/*": ["./src/utils/*"]
+    }
+  }
+}
