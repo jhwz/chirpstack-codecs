@@ -9,8 +9,7 @@ type DecodeOutput<T = Record<string, unknown>> = {
 };
 
 type EncodeInput<V = Record<string, unknown>> = {
-  bytes: number[];
-  fPort: number;
+  data: Record<string, unknown>;
   variables: V;
 };
 
