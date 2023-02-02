@@ -4,13 +4,14 @@ function parseWaterFlowStatus(bytes: number[]) {
   var flag = (bytes[0] & 0xfc) >> 2;
 
   const pulse = uint32(bytes.slice(1, 5)) >>> 0;
-  const flow = flag == 2 ? pulse / 60 : flag == 1 ? pulse / 360 : pulse / 450;
+  const flow = flag == 2 ? pulse / 64 : flag == 1 ? pulse / 390 : pulse / 450;
 
   return {
     data: {
       calculateFlag: flag,
       mod: bytes[5],
       alarm: bytes[0] & 0x02 ? true : false,
+      lpm: flow / 20,
       flow,
       pulse,
       timestamp: uint32(bytes.slice(7)),
